@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        /* scale: 0.5; */
+        transform: translateX(100px);
+        /* clip-path: inset(100% 100% 0 0); */
+    }
+    to {
+        opacity: 1;
+        /* scale: 1; */
+        transform: translateX(0px);
+        /* clip-path: inset(0 0 0 0); */
+
+    }
+}
+#block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 ;
+}
+
+        a {
+      color: #00c6ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #7b5cff;
+    }
+        .other {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 90px 5px;
+            margin: 0px;
+            font-family: "ROBOTO" sans-serif;
+            border-top: 3px solid #0f192f;
+            /* background-image: linear-gradient(135deg, #05060f 40%, #1b2a4e); */
+            /* background-image: linear-gradient(-135deg,rgb(16, 2, 75)30%,rgb(117, 18, 114)); */
+
+            background: radial-gradient(circle at top right, #0f1a35, #05060f 70%);
+
+
+        }
+
+        .aboutme {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            color: #ffffff;
+            font-size: 17px;
+            margin: auto;
+            text-align: left;
+            transition: 0.4s ease;
+        }
+
+        .aboutme:hover {
+            /* transform: translateY(8px);
+            /* box-shadow: 20px 20px 10px rgb(0, 0, 0);*/
+            box-shadow:
+                0 12px 35px rgba(85, 150, 170, 0.367),
+                inset 0 0 14px rgba(48, 14, 2, 0.15);
+            transform: translateY(-10px);
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.8),
+                0 0 35px rgba(123, 92, 255, 0.35);
+        }
+
+        .skills:hover {
+            box-shadow:
+                0 12px 35px rgba(85, 150, 170, 0.367),
+                inset 0 0 14px rgba(48, 14, 2, 0.15);
+            transform: translateY(-10px);
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.8),
+                0 0 35px rgba(123, 92, 255, 0.35);
+
+
+        }
+
+        .projects:hover {
+            box-shadow:
+                0 12px 35px rgba(85, 150, 170, 0.367),
+                inset 0 0 14px rgba(48, 14, 2, 0.15);
+            transform: translateY(-10px);
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.8),
+                0 0 35px rgba(123, 92, 255, 0.35);
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            color: #ffffff;
+            font-size: 17px;
+            margin: auto;
+            text-align: left;
+            transition: 0.4s ease;
+
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            color: #ffffff;
+            font-size: 17px;
+            margin: auto;
+            text-align: left;
+            transition: 0.4s ease;
+        }
+
+        .button-2 {
+            color: rgb(255, 255, 255);
+            max-width: 170px;
+            padding: 11px 9px;
+            font-family: "ROBOTO", sans-serif;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            font-size: 17px;
+            margin: 10px;
+            font-weight: 500;
+            box-shadow: 5px 5px 10px black;
+            background: linear-gradient(135deg, #000000, #071863af);
+            cursor: pointer;
+            transition: all ease 0.3s;
+            
+        }
+
+        .button-2:hover {
+            color: rgb(255, 255, 255);
+            background: rgba(140, 217, 255, 0.536);
+            transform: translateY(-3px);
+            box-shadow: inset 3px 3px 4px black;
+            
+        }
+
+        .comp_pic {
+            margin: 10px;
+            max-width: 330px;
+            border-radius: 14px;
+        }
+
+        .other-text {
+            padding: 12px 10px;
+            font-size: 27px;
+            font-weight: bold;
+
+            font-family: "Roboto", sans-serif;
+        }
+
+        .other-subtext {
+            margin: 10px;
+            font-family: "ROBOTO", sans-serif;
+        }
+
+
+
+        .more {
+            background: linear-gradient(-135deg , #000619 50%,#000000f2 );  
+            /* background: linear-gradient(to bottom, #05060f, #0b1020); */
+            /* background-image: linear-gradient(-135deg,rgb(62, 31, 71),rgb(56, 3, 3)); */
+            /* background-image: linear-gradient(-135deg,rgb(62, 31, 71),rgb(56, 3, 3)); */
+            /* max-width: 1000px; */
+
+
+            color: white;
+            padding: 70px 0px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            border-top: 3px solid #0f192f;
+
+        }
+
+
+
+        .more-text {
+            box-shadow: 1px 10px 10px black;
+            padding: 10px;
+            border-radius: 20px;
+            max-width: 550px;
+            font-family: "ROBOTO", sans-serif;
+            margin-right: 5px;
+            /* border: 2px solid rgba(102, 8, 8, 0.512); */
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: 0.4s ease;
+            background-image: linear-gradient(-135deg, rgb(0,0,0), rgba(67, 10, 10, 0.342));
+
+        }
+
+        .more-text:hover {
+            transform: translateX(15px);
+            box-shadow: -30px 30px 1px black;
+            border: 1px solid white ;
+
+        }
+
+        .bullet-list {
+            font-size: 20px;
+            width: 500px;
+            list-style-position: outside;
+            /* keeps bullets aligned */
+            padding-left: 20px;
+            /* space between bullet and text */
+            line-height: 1.6;
+            /* better readability */
+        }
+
+        .my_pic2 {
+            margin: 4px 40px;
+            border-radius: 50px;
+            /* max-width: 100%; */
+            max-width: 350px;
+            z-index: 5;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        .lets-work {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: "ROBOTO", sans-serif;
+            /* background-image: linear-gradient(-135deg,rgb(32, 25, 34),rgb(0, 17, 58)); */
+            background: radial-gradient(circle at center, #101a3a, #05060f 75%);
+            color: white;
+            border-top: 3px solid #0f192f;
+        }
+
+
+        .button-3 {
+            cursor: pointer;
+            color: white;
+            padding: 13px 50px;
+            margin: 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            border: 0;
+            background: linear-gradient(135deg,#7a5cffa8,#00c8ff98);
+            box-shadow: 5px 5px 10px black;
+            transition: all ease 0.4s;
+        }
+
+        .button-3:hover {
+            transform: translateY(3px);
+            /* box-shadow: 0px 5px 10px rgba(218, 165, 32, 0.684); */
+           background: linear-gradient(135deg,#00c6ff,#7b5cff);
+
+        }
+
+        .footer {
+            color: white;
+            max-height: 10vh;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; s */
+            background-image: linear-gradient(to bottom, #0b0133 1%, rgb(0, 0, 0) 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Yash's Portfolio
+        </div>
+        <ul>
+           <a href="index.html"><li>Home</li></a> 
+            <a href="about.html"><li>About</li></a>
+            <a href="projects.html"><li>Projects</li></a>
+            <a href="skills.html"><li>Skills</li></a>
+           <a href="contact.html"><li>Contact</li></a>
+        </ul>
+        <a href="Yash_Srivastava_CV.pdf" download><button class="cv-btn">Download CV</button></a>       
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="particle p1"></div>
+            <div class="particle p2"></div>
+            <div class="particle p3"></div>
+            <div class="particle p4"></div>
+
+            <div class="hero-left">
+                <div class="one"><span class="size">Hey,</span> welcome to my world</div>
+                <div class="two">I am a growing <span class="bold">&lt;Developer/&gt</span></div>
+                <div class="button-1">
+                    <a href="projects.html"><button class="btn1">View My Projects</button></a>
+                    <a href="about.html"><button class="btn2">About Me</button></a>
+                </div>
+            </div>
+            <div class="hero-right"><img src="my_pic.jpeg" alt="yash's pic" class="my_pic"></div>
+        </section>
+        <section>
+            <div class="other">
+
+                <div id="block" class="aboutme"><img src="comp_me.jpeg" alt="about me" class="comp_pic">
+                    <div class="other-text">About Me</div>
+                    <div class="other-subtext">Learn more about who I am, my
+                        journey, and what I'm passionate.</div>
+                    <a href="about.html"><button class="button-2">Read More &#8594;</buttton></a>
+                </div>
+                <div id="block" class="skills">
+                    <img src="skills.jpeg" alt="about me" class="comp_pic">
+                    <div class="other-text">Skills &#38; Tools </div>
+                    <div class="other-subtext">Explore the prograrmming languages, tools, and
+                        frameworks I work with.</div>
+                    <a href="skills.html"><button class="button-2">View Skills &#8594;</button></a>
+                </div>
+                <div id="block" class="projects">
+                    <img src="project.png" alt="about me" class="comp_pic">
+                    <div class="other-text">Recent Projects</div>
+                    <div class="other-subtext">Check out some of the projects i've worked on recently.</div>
+                    <a href="projects.html"><button class="button-2">View Projects &#8594;</button></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="more-card">
+                <div class="more">
+
+                    <div id="block" class="more-text">
+                        <h2 style="font-size: 60px; color: #7758ff;">About Me</h2>
+                        <h3 style="width: 300px; font-size: 30px; color: #9dc0ca;">Aspiring Developer &#38; Computer
+                            Science
+                            Student</h3>
+                        <br>
+                        <p style="font-size: 22px; letter-spacing: 0.5px; ">I'm Yash, a passionate Computer Science
+                            Engineering student specializing in programming and web development. Currently. my first
+                            year of
+                            core B.Tech, CSE, committed to mastering the foundational concepts of computer science and
+                            innovative web solutions.
+                        </p>
+                        <br>
+                        <ul class="bullet-list">
+                            <li>Mastering C, Python programming, and problem-solving</li>
+                            <li>Building engaging web projects with HTML, CSS, and JavaScript</li>
+                            <li>Exploring new technologies and frameworks</li>
+                        </ul>
+                    </div>
+                    <div id="block" >
+                        <img src="mypic2.png" alt="yash pic" class="my_pic2">
+                    </div>
+
+                </div>
+
+
+        </section>
+        <section>
+            <div  class="lets-work">
+                <h2 id="block" style="font-size: 60px; padding: 20px; color: #7b5cff;">Let's work Together</h2>
+                <p id="block" style="width: 650px; font-size: 30px; max-width: 1500px; text-align: center; color: #abded4a4 ; padding: 30px;">
+                    "Open to collaborations, internships, and exciting opportunities to learn and build together."</p>
+                <a href="contact.html"><button id="block" class="button-3">Get In Touch</button></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p style="padding: 20px 30px; letter-spacing: 0.3px;">&copy;2026 Yash Srivastava. All Rights Reserved. </p>
+
+
+    </footer>
+</body>
+
+</html>

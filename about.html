@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Yash Srivastava</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #05060f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #7b5cff;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #0b1020;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+      color: #cbd5ff;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #cbd5ff;
+    }
+
+    /* About Me Section */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .about-section img {
+      width: 280px;
+      border-radius: 20px;
+      border: 2px solid rgba(255,255,255,0.08);
+    }
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+      color: #cbd5ff;
+    }
+
+    /* Skills Highlights */
+    .skills-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .highlight-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .highlight-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(123,92,255,0.35);
+    }
+    .highlight-card h3 {
+      margin-top: 0;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .highlight-card p {
+      color: #cbd5ff;
+    }
+
+    /* Timeline */
+    .timeline {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-left: 2px solid #7b5cff;
+    }
+    .timeline-step {
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .timeline-step::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: #00c6ff;
+      border-radius: 50%;
+    }
+    .timeline-step h4 {
+      margin: 0;
+      color: #ffffff;
+    }
+    .timeline-step p {
+      color: #cbd5ff;
+      margin: 0.3rem 0 0 0;
+    }
+
+    /* Interests Section */
+    .interests {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .interest-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .interest-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(123,92,255,0.35);
+    }
+    .interest-card h4 {
+      margin: 0;
+      color: #ffffff;
+    }
+
+    /* Call To Action */
+    .cta {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: #0b1020;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .cta p {
+      color: #cbd5ff;
+      margin-bottom: 1.5rem;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      color: #ffffff;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(123,92,255,0.4);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+      color: #aaaaaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-section img {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="Yash_Srivastava_CV.pdf" download>Download CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>About Me</h1>
+    <h2>Passionate about building technology, solving problems, and continuously learning.</h2>
+    <p>My name is Yash Srivastava, a Computer Science Engineering student who enjoys building projects, exploring new technologies, and improving my programming skills every day. I believe in learning by building and turning ideas into real applications.</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section">
+    <img src="my_pic.jpeg" alt="Profile Image of Yash Srivastava">
+    <div class="about-text">
+      <p>I developed an interest in technology and programming early on, starting with C and gradually exploring web development. My journey has been focused on building real projects that challenge me

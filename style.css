@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 3000px;
+} */
+
+/* nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 10px 0px;
+    /* background-color: rgb(32, 44, 150); */
+/* background-image: linear-gradient(to left, rgb(38, 194, 194), black); */
+/* */
+nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    padding: 14px 30px;
+    /* color: white; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(15, 20, 40, 0.55);
+    backdrop-filter: blur(14px);
+    border-radius: 16px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+
+
+    z-index: 999;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 17px;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+}
+
+/* nav ul li {
+    list-style-type: none;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+} */
+* nav ul li {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  /* color: #ffffff; */
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* * nav ul li::after,
+* nav ul li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ad5151, #ffff55);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+* nav ul li::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+* nav ul li:hover::after,
+* nav ul li:hover::before {
+  transform: scaleX(1);
+}
+
+
+ */
+
+
+/* .logo {
+    font-size: 19spx;
+    font-weight: 600;
+    font-family: "Playwrite AU TAS", cursive;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+} */
+/* From Uiverse.io by neerajbaniwal */ 
+.logo {
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 19px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+
+
+
+
+
+.hero {
+     background: linear-gradient(to top, #010116, #000000f2);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+
+    height: 85vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-left .one {
+
+    font-size: 60px;
+}
+
+.hero-left .two {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+    color: rgb(175, 236, 236);
+}
+
+.size {
+    font-size: 85px;
+}
+
+.hero-right {
+    width: 250px;
+    margin-right: 40px;
+
+}
+
+.my_pic {
+    max-width: 100%;
+    /* height:250px; */
+    width: 250px;
+    border-radius: 40px;
+}
+.comp_pic{
+    max-width: 100%;
+    /* height:250px; */
+    width: 473px;
+}
+.comp_pic1 {
+    max-width: 100%;
+    /* height:250px; */
+    width: 473px;
+}
+
+.button-1 {
+    font-family: "ROBOTO" sans-serif;
+    display: flex;
+    gap: 18px;
+    margin-top: 40px;
+    color: white;
+}
+
+.btn1 {
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    /* background: linear-gradient(-135deg, #000000, #5f1705); */
+    background: linear-gradient(135deg, #454250, #0f97bd);
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+    box-shadow: 0 10px 30px rgba(123, 92, 255, 0.4), inset 0 0 10px rgba(255,255,255,0.1);
+}
+.btn1:hover{
+    transform: translateY(-2px);
+background: linear-gradient(135deg, rgba(140,90,255,0.55), rgba(0,200,255,0.45));
+
+  box-shadow:
+    0 12px 35px rgba(0,200,255,0.3),
+    inset 0 0 14px rgba(255,255,255,0.15);
+}
+
+
+.btn2 {
+    padding: 8px 25px;
+    border-radius: 7px;
+    border: none;
+    border: 0.1px solid rgb(203, 200, 200);
+    cursor: pointer;
+    color: white;
+
+    border-radius: 7px;
+    font-weight: 500;
+    background-color: rgba(203, 200, 200, 0.15);
+    
+}
+.btn2:hover{
+    transform: translateY(-2px);
+background: linear-gradient(135deg, rgba(140,90,255,0.55), rgba(0,200,255,0.45));
+
+  box-shadow:
+    0 12px 35px rgba(0,200,255,0.3),
+    inset 0 0 14px rgba(255,255,255,0.15);
+}
+
+
+.cv-btn {
+    font-size: 19px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255,0.15);
+    cursor: pointer;
+
+    background: linear-gradient(135deg,#16065e,#094f62);
+
+color: white;
+letter-spacing: 0.4px;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.35),
+    inset 0 0 12px rgba(255,255,255,0.08);
+}
+.cv-btn:hover{
+    transform: translateY(-2px);
+background: linear-gradient(135deg, rgba(140,90,255,0.55), rgba(0,200,255,0.45));
+
+  box-shadow:
+    0 12px 35px rgba(0,200,255,0.3),
+    inset 0 0 14px rgba(255,255,255,0.15);
+}
+.cv-btn:active {
+    transform: translateY(1px);
+    background: linear-gradient(135deg, rgba(140,90,255,0.45), rgba(0,200,255,0.35));
+    box-shadow:
+      0 8px 25px rgba(0,200,255,0.2),
+      inset 0 0 10px rgba(255,255,255,0.05);
+}
+
+
+
+
+
+
+
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #7b5cff, transparent 70%);
+    border-radius: 50%;
+    filter: blur(1px);
+    opacity: 0.8;
+    animation: float 6s ease-in-out infinite alternate;
+    z-index: 2;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-40px);
+    }
+}
+
+/* positions */
+.p1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.p2 {
+    top: 60%;
+    left: 25%;
+    animation-delay: 1s;
+}
+
+.p3 {
+    top: 30%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.p4 {
+    bottom: 15%;
+    right: 30%;
+    animation-delay: 3s;
+}
+
+
+:root {
+  --bg-main: #05060f;
+  --bg-soft: #0b1020;
+  --bg-card: rgba(255,255,255,0.04);
+
+  --primary: #7b5cff;
+  --secondary: #00c6ff;
+  --accent: #ff7a18;
+
+  --text-main: #ffffff;
+  --text-soft: #b6c2ff;
+}
+
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: calc(100% - 32px);
+        padding: 12px 18px;
+    }
+
+    .logo {
+        padding: 10px 22px;
+    }
+
+    .hero-left .one {
+        font-size: clamp(2.1rem, 4.5vw, 3rem);
+    }
+
+    .hero-left .two {
+        font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+    }
+
+    .size {
+        font-size: clamp(2.7rem, 6vw, 4rem);
+    }
+
+    .other {
+        flex-wrap: wrap;
+        gap: 28px;
+        padding: 70px 16px;
+    }
+
+    .aboutme,
+    .skills,
+    .projects {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .more {
+        flex-direction: column;
+        gap: 24px;
+        padding: 56px 18px;
+    }
+
+    .more-text {
+        margin-right: 0;
+        max-width: 760px;
+    }
+
+    .bullet-list {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .my_pic2 {
+        margin: 0;
+        width: min(100%, 320px);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        top: 10px;
+        width: calc(100% - 20px);
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        padding: 4px 0;
+    }
+
+    .cv-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 130px 20px 56px;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-left .one {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .hero-left .two {
+        font-size: clamp(1.2rem, 5.5vw, 1.9rem);
+    }
+
+    .size {
+        font-size: clamp(2.3rem, 10vw, 3.4rem);
+    }
+
+    .hero-right {
+        width: min(65vw, 230px);
+        margin-right: 0;
+    }
+
+    .button-1 {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .more-text h2 {
+        font-size: clamp(2rem, 11vw, 2.8rem) !important;
+    }
+
+    .more-text h3 {
+        width: 100% !important;
+        font-size: clamp(1.25rem, 6vw, 1.7rem) !important;
+    }
+
+    .more-text p {
+        font-size: clamp(1rem, 4.8vw, 1.25rem) !important;
+    }
+
+    .bullet-list {
+        font-size: clamp(1rem, 4.5vw, 1.15rem);
+    }
+
+    .lets-work h2 {
+        font-size: clamp(2rem, 11vw, 2.8rem) !important;
+        padding: 16px !important;
+    }
+
+    .lets-work p {
+        width: min(92vw, 650px) !important;
+        font-size: clamp(1.05rem, 5vw, 1.35rem) !important;
+        padding: 18px !important;
+    }
+
+    .button-3 {
+        width: min(90vw, 280px);
+        padding: 12px 24px;
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 8px;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+
+    .other {
+        padding: 52px 12px;
+    }
+
+    .other-text {
+        font-size: 1.35rem;
+    }
+
+    .other-subtext {
+        font-size: 0.95rem;
+    }
+
+    .button-2 {
+        font-size: 0.95rem;
+    }
+
+    .more {
+        padding: 46px 12px;
+    }
+
+    .more-text {
+        padding: 12px;
+    }
+}

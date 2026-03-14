@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Yash Srivastava</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a0f1c, #000000);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #7b5cff;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding:0rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #cccccc;
+    }
+
+    /* Contact Form Section */
+    .contact-form {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .form-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .form-card input,
+    .form-card textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      font-size: 1rem;
+    }
+    .form-card input::placeholder,
+    .form-card textarea::placeholder {
+      color: #aaaaaa;
+    }
+    .form-card textarea {
+      resize: none;
+      height: 120px;
+    }
+    .form-card button {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .form-card button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 198, 255, 0.4);
+    }
+
+    /* Contact Info */
+    .contact-info {
+      text-align: center;
+      padding: 2rem;
+      color: #cccccc;
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    /* Social Links */
+    .social-links {
+      text-align: center;
+      padding: 1rem;
+    }
+    .social-links a {
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: transform 0.3s ease;
+    }
+    .social-links a:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+      color: #aaaaaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .form-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="Yash_Srivastava_CV.pdf" download>Download CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Get In Touch</h1>
+    <p>I’m always open to discussing new ideas, collaborations, or opportunities in technology and development. If you’d like to connect or discuss a project, feel free to reach out.</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <div class="form-card">
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="contact-info">
+    <p>Email: srivastavayash395@gmail.com</p>
+    <p>Location: India</p>
+  </section>
+
+  <!-- Social Links -->
+  <section class="social-links">
+    <a href="https://github.com/yash-dev05" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/yash-srivastava-1486813b1/" target="_blank">LinkedIn</a>
+    <a href="https://twitter.com/" target="_blank">Twitter</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Yash Srivastava. All rights reserved.
+  </footer>
+</body>
+</html>

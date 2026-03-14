@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Yash Srivastava</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a0f1c, #000000);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #7b5cff;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #cccccc;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Skill Card */
+    .skill-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(123, 92, 255, 0.4), 0 12px 25px rgba(0, 198, 255, 0.4);
+    }
+    .skill-card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .skill-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+    }
+    .skill-card li {
+      margin: 0.5rem 0;
+      color: #cccccc;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+    .skill-card li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #00c6ff;
+    }
+
+    /* Optional Progress Bars */
+    .progress {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      height: 8px;
+      margin-top: 0.5rem;
+    }
+    .progress span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #7b5cff, #00c6ff);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+      color: #aaaaaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .skill-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="Yash_Srivastava_CV.pdf" download>Download CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>My Skills</h1>
+    <p>Here are the technologies, tools, and areas of expertise I use to build modern web applications and solve real-world problems.</p>
+  </section>
+
+  <!-- Skills Grid -->
+  <section class="skills-grid">
+    <!-- Programming Languages -->
+    <div class="skill-card">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>C <div class="progress"><span style="width:80%"></span></div></li>
+        <li>Python <div class="progress"><span style="width:85%"></span></div></li>
+        <li>JavaScript <div class="progress"><span style="width:75%"></span></div></li>
+      </ul>
+    </div>
+
+    <!-- Web Development -->
+    <div class="skill-card">
+      <h2>Web Development</h2>
+      <ul>
+        <li>HTML <div class="progress"><span style="width:90%"></span></div></li>
+        <li>CSS <div class="progress"><span style="width:85%"></span></div></li>
+        <li>Responsive Design <div class="progress"><span style="width:80%"></span></div></li>
+        <li>Basic JavaScript <div class="progress"><span style="width:70%"></span></div></li>
+      </ul>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="skill-card">
+      <h2>Tools & Technologies</h2>
+      <ul>
+        <li>Git <div class="progress"><span style="width:75%"></span></div></li>
+        <li>GitHub <div class="progress"><span style="width:80%"></span></div></li>
+        <li>VS Code <div class="progress"><span style="width:85%"></span></div></li>
+        <li>Linux basics <div class="progress"><span style="width:65%"></span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Yash Srivastava. All rights reserved.
+  </footer>
+</body>
+</html>
